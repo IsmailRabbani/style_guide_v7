@@ -506,7 +506,23 @@ a {
     margin-right: auto;
   }
   .row {
+    display: flex;
     flex-direction: row;
+  }
+  header.row {
+    align-items: center;
+  }
+  header.row .col-9 {
+    justify-content: flex-end;
+  }
+  header.row .nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end; /* Ensures links push to the far right */
+    align-items: center;
+  }
+  header.row .nav-link {
+    flex-basis: 100px;
   }
   [class^=col] {
     display: flex;
@@ -553,16 +569,8 @@ a {
   .col-12 {
     flex-basis: 100%;
   }
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .nav-link {
-    flex-basis: 100px;
-  }
   .btn {
-    padding: 10px 30px;
+    padding: 10px auto;
   }
   .btn + .btn {
     margin-left: 10px;
