@@ -1,6 +1,4 @@
-/* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
+//===== Navigation
 
 .nav {
   padding-left: 0;
@@ -11,8 +9,8 @@
 
 .nav-link {
   text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
+  border-radius: $border-radius;
+  padding: $base-spacing 0;
   display: block;
   width: 100%;
   transition:
@@ -21,6 +19,6 @@
 }
 
 .nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
+  color: $white;
+  background-color: $accent-color;
 }

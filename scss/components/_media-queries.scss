@@ -1,10 +1,8 @@
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
-@media (min-width: 768px) {
+//===== Media Queries
+@media (min-width: $breakpoint-tablet) {
 
 .container {
-  max-width: 1400px;
+  max-width: $container-width;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +26,7 @@
 }
 
 [class^=col] + [class^=col] {
-  margin-left: 10px;
+  margin-left: $base-spacing;
 }
 
 .col-1 {
@@ -90,11 +88,11 @@
 }
 
 .btn {
-  padding: 10px 30px;
+  padding: $base-spacing 30px;
 }
 
 .btn + .btn {
-  margin-left: 10px;
+  margin-left: $base-spacing;
 }
 
 .logo {

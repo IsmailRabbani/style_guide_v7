@@ -1,10 +1,7 @@
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
-
+// ====  Base styles
 * {
-  font-family: 'Lato', sans-serif;
-  color: #777;
+  font-family: $font-stack;
+  color: $color-secondary;
   box-sizing: border-box;
 }
 
@@ -17,31 +14,29 @@ a {
 }
 
 
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
+// ===== TYPOGRAPHY
 
 .headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
+  color: $accent-color;
+  margin-left: $base-spacing;
 }
 
 .headline-secondary {
-  font-weight: 300;
-  color: #777;
+  font-weight: $font-weight-light;
+  color: $color-secondary;
 }
 
 .link {
-  color: #51ddfc;
-  font-weight: 700;
+  color: $color-primary;
+  font-weight: $font-weight-bold;
 }
 
 .blockquote {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: $font-weight-light;
   font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
+  margin-left: calc($base-spacing * 2);
+  padding-left: calc($base-spacing * 2);
+  border-left: $border-width-heavy solid $accent-color;
+  border-radius: $border-radius;
 }

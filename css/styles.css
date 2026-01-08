@@ -307,12 +307,9 @@ template {
   display: none;
 }
 
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
 * {
-  font-family: "Lato", sans-serif;
-  color: #777;
+  font-family: "Lato", sans-sarif;
+  color: #777777;
   box-sizing: border-box;
 }
 
@@ -324,9 +321,6 @@ a {
   text-decoration: none;
 }
 
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
 .headline-primary {
   color: #58e1c1;
   margin-left: 10px;
@@ -334,7 +328,7 @@ a {
 
 .headline-secondary {
   font-weight: 300;
-  color: #777;
+  color: #777777;
 }
 
 .link {
@@ -352,13 +346,10 @@ a {
   border-radius: 5px;
 }
 
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
@@ -385,9 +376,6 @@ a {
   background-color: #fd7856;
 }
 
-/* ============================================= */
-/*              Forms                            */
-/* ============================================= */
 .form {
   flex-basis: 100%;
 }
@@ -410,9 +398,6 @@ a {
   overflow: hidden;
 }
 
-/* ============================================= */
-/*              Grid System                      */
-/* ============================================= */
 .container {
   padding: 0 10px;
 }
@@ -483,9 +468,6 @@ a {
   flex-basis: 100%;
 }
 
-/* ============================================= */
-/*              Images                           */
-/* ============================================= */
 .img-avatar {
   display: block;
   margin-left: auto;
@@ -511,9 +493,6 @@ a {
   margin-right: auto;
 }
 
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
   .container {
     max-width: 1400px;
@@ -593,9 +572,6 @@ a {
     margin-right: initial;
   }
 }
-/* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
 .nav {
   padding-left: 0;
   flex-basis: 100%;
@@ -613,7 +589,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #58e1c1;
 }
 

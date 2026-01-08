@@ -1,33 +1,31 @@
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
+// ==== BUTTONS
 
 .btn {
-  margin-top: 15px;
+  margin-top: calc($base-spacing * 1.5);
   width: 100%;
-  color: #fff;
+  color: $white;
   border: none;
-  padding: 10px 0;
+  padding: $base-spacing 0;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: $border-radius;
 }
 
 .default {
-  background-color: #51ddfc;
+  background-color: $color-primary;
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $candy-pink;
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $blue-purple;
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $green-teal;
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $coral;
 }

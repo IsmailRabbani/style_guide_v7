@@ -1,0 +1,51 @@
+// ===== COLOR VARIABLES ===== //
+$ocean-Green         :     #58e1c1;
+$ocean-blue          :     #51ddfc;
+$candy-pink          :     #e4757a;
+$blue-purple         :     #927bc1;
+$green-teal          :     #63cc82;
+$pastel-indigo       :     #deb2ee;
+$pastel-red          :     #ec9fa3;
+$greenish-cyan       :     #7ee6fd;
+$light-teal          :     #80e8d1;
+$blue-green-shade    :     #4da2bb;
+$turquoise           :     #88d9a0;
+$peach               :     #fd9f85;
+$coral               :     #fd7856;
+$grey                :     #777777;
+$white               :     #ffffff;
+
+// ==== FUNCTIONAL COLOR VARIABLES
+
+$color-primary         : $ocean-blue;
+$color-secondary       : $grey;
+$accent-color          : $ocean-Green;
+
+
+// ==== TYPOGRAPHY
+
+$font-stack            : "Lato" , sans-sarif;
+$font-weight-light     : 300;
+$font-weight-normal    : 400;
+$font-weight-bold      : 700;
+
+
+// ==== LAYOUT & SPACING
+
+$breakpoint-tablet     : 768px;
+$container-width       : 1400px;
+$base-spacing          : 10px;
+$border-radius         : 5px;
+
+
+// ==== BOARDERS
+
+$border-width-thin     : 1px;
+$border-width-thick    : 5px;
+$border-width-heavy    : 8px;
+
+
+// ===== ANIMATION
+
+$transition-base       : 0.3s ease-in-out;
+$transition-fast       : 0.2s ease-in-out;
