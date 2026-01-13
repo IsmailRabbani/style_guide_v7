@@ -11,59 +11,21 @@
 }
 
 [class^=col] {
-  margin-top: $base-spacing;
   flex-basis: 100%;
   min-height: calc($base-spacing * 2.5);
+  margin-top: $base-spacing;
   padding: $base-spacing;
   border-radius: $border-radius;
 }
 
-.theme.col-1 {
-  background-color: $blue-purple;
-}
+// --- THE LOOP ---
+// This reads: "For every 'number' and 'color' inside '$grid-theme-colors'..."
+@each $num, $color in $grid-theme-colors {
 
-.theme.col-2 {
-  background-color: $coral;
-}
-
-.theme.col-3 {
-  background-color: $pastel-indigo;
-}
-
-.theme.col-4 {
-  background-color: $greenish-cyan;
-}
-
-.theme.col-5 {
-  background-color: $turquoise;
-}
-
-.theme.col-6 {
-  background-color: $blue-green-shade;
-}
-
-.theme.col-7 {
-  background-color: $pastel-red;
-}
-
-.theme.col-8 {
-  background-color: $peach;
-}
-
-.theme.col-9 {
-  background-color: $candy-pink;
-}
-
-.theme.col-10 {
-  background-color: $green-teal;
-}
-
-.theme.col-11 {
-  background-color: $color-primary;
-}
-
-.theme.col-12 {
-  background-color: $light-teal ;
+  // Generate .theme.col-1, .theme.col-2, etc.
+  .theme.col-#{$num} {
+    background-color: $color;
+  }
 }
 
 .card {

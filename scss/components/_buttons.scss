@@ -1,31 +1,27 @@
 // ==== BUTTONS
 
 .btn {
-  margin-top: calc($base-spacing * 1.5);
+  // Base Styles
   width: 100%;
-  color: $white;
-  border: none;
+  margin-top: calc($base-spacing * 1.5);
   padding: $base-spacing 0;
-  text-transform: uppercase;
+  border: none;
   border-radius: $border-radius;
-}
+  color: $color-bg-light;
+  text-transform: uppercase;
+  // Transition for the hover effect
+  transition: background-color 0.3s ease;
 
-.default {
-  background-color: $color-primary;
-}
+  // --- THE LOOP ---
 
-.error {
-  background-color: $candy-pink;
-}
-
-.info {
-  background-color: $blue-purple;
-}
-
-.success {
-  background-color: $green-teal;
-}
-
-.warning {
-  background-color: $coral;
+  // This reads: "For every 'name' and 'color' inside '$btn-themes'..."
+  @each $name, $color in $btn-themes {
+    // Create a class like &.error or &.success
+    &.#{$name} {
+      background-color: $color;
+      &:hover {
+        background-color: darken($color, 10%);
+      }
+    }
+  }
 }

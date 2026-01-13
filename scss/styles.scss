@@ -1,8 +1,11 @@
-//====== Import Utilities
-@import 'utilities/index';
+//==== CONFIGURATION (Must be first, produces no CSS)
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/normalize";
+@import "utilities/helpers";
 
-//====== Import Utilities
-@import 'base/index';
+//==== 4. BASE STYLES
+@import "base/typography";
 
-//====== Import Utilities
-@import 'components/index';
+//==== 5. COMPONENTS
+@import "components/index";

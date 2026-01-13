@@ -1,26 +1,22 @@
 //===== IMAGES
-
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: $base-spacing;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: $base-spacing;
-  max-width: 100%;
-  padding: calc($base-spacing * 1.3);
-  border: $border-width-thin solid #ccc;
-}
-
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.img {
+    // ==== Styles for Image Avatar
+    &-avatar {
+      @extend %img-centered;
+      margin-top: $base-spacing;
+      max-width: 100%;
+      max-height: 100%;
+     // Styles for Image Frames
+  }
+    &-frame {
+      @extend %img-centered;
+      margin-top: $base-spacing;
+      max-width: 100%;
+      padding: calc($base-spacing * 1.3);
+      border: $border-width-thin solid $color-text;
+      // Styles for Logo Image
+  }
+    &-logo {
+      @extend %img-centered;
+  }
 }
