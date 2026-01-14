@@ -1,50 +1,48 @@
 // ===== THE PALETTE / COLOR VARIABLES ===== //
 
-// --- Neutrals ---
-$white:             #ffffff;
-$grey:              #777777;
+// === Neutrals
+$white               : #ffffff;
+$grey                : #777777;
 
-// --- The Brand Teals & Blues ---
-$ocean-green:       #58e1c1; // Used for Headlines, Nav Hover, Input Border
-$ocean-blue:        #51ddfc; // Used for Links, Default Buttons
-$light-teal:        #80e8d1;
-$turquoise:         #88d9a0;
-$greenish-cyan:     #7ee6fd;
-$blue-green:        #4da2bb;
+// === The Brand Teals & Blues
+$ocean-green         : #58e1c1; // Used for Headlines, Nav Hover, Input Border
+$ocean-blue          : #51ddfc; // Used for Links, Default Buttons
+$light-teal          : #80e8d1;
+$turquoise           : #88d9a0;
+$greenish-cyan       : #7ee6fd;
+$blue-green          : #4da2bb;
 
-// --- The Warm Tones (Reds, Oranges) ---
-$candy-pink:        #e4757a; // Used for Error
-$coral:             #fd7856; // Used for Warning
-$peach:             #fd9f85;
-$pastel-red:        #ec9fa3;
+// === The Warm Tones (Reds, Oranges)
+$candy-pink          : #e4757a; // Used for Error
+$coral               : #fd7856; // Used for Warning
+$peach               : #fd9f85;
+$pastel-red          : #ec9fa3;
 
-// --- The Purples & Greens ---
-$blue-purple:       #927bc1; // Used for Info
-$pastel-indigo:     #deb2ee;
-$green-teal:        #63cc82; // Used for Success
-
+// === The Purples & Greens
+$blue-purple         : #927bc1; // Used for Info
+$pastel-indigo       : #deb2ee;
+$green-teal          : #63cc82; // Used for Success
 
 // ====FUNCTIONAL ASSIGNMENTS ===== //
 
-// --- Brand Colors ---
-$color-primary:     $ocean-green; // Main brand color
-$color-text:        $grey;        // Body text
-$color-bg-light:    $white;       // Buttons/nav
+// === Brand Colors
+$color-primary       : $ocean-green; // Main brand color
+$color-text          : $grey;        // Body text
+$color-bg-light      : $white;       // Buttons/nav
 
-// --- UI Elements ---
-$color-link:        $ocean-blue;
-$color-border-ui:   $ocean-green; // Used on Inputs, Blockquotes
-$color-border-img:  $grey;        // Used on Image Frames
+// === UI Elements
+$color-link          : $ocean-blue;
+$color-border-ui     : $ocean-green; // Used on Inputs, Blockquotes
+$color-border-img    : $grey;        // Used on Image Frames
 
-// --- Button / State Colors ---
-$color-default:     $ocean-blue;
-$color-error:       $candy-pink;
-$color-info:        $blue-purple;
-$color-success:     $green-teal;
-$color-warning:     $coral;
+// === Button / State Colors
+$color-default       : $ocean-blue;
+$color-error         : $candy-pink;
+$color-info          : $blue-purple;
+$color-success       : $green-teal;
+$color-warning       : $coral;
 
-
-// Map for Button Themes
+// ==== Map for Button Themes ==== //
 $btn-themes: (
   'default': $color-default,
   'error':   $color-error,
@@ -53,7 +51,7 @@ $btn-themes: (
   'warning': $color-warning
 );
 
-// Map for the Grid (col-1 to col-12)
+// ==== Map for the Grid (col-1 to col-12) ==== //
 $grid-theme-colors: (
   1:  $blue-purple,
   2:  $coral,
@@ -69,31 +67,23 @@ $grid-theme-colors: (
   12: $light-teal
 );
 
+// === TYPOGRAPHY
+$font-stack          : "Lato", sans-serif;
+$font-weight-light   : 300;
+$font-weight-normal  : 400;
+$font-weight-bold    : 700;
 
-// ==== TYPOGRAPHY
-
-$font-stack            : "Lato", sans-serif;
-$font-weight-light     : 300;
-$font-weight-normal    : 400;
-$font-weight-bold      : 700;
-
-
-// ==== LAYOUT & SPACING
-
-$breakpoint-tablet     : 768px;
-$container-width       : 1400px;
-$base-spacing          : 10px;
-$border-radius         : 5px;
-
+// === LAYOUT & SPACING
+$breakpoint-tablet   : 768px;
+$container-width     : 1400px;
+$base-spacing        : 10px;
+$border-radius       : 5px;
 
 // ==== BOARDERS
-
-$border-width-thin     : 1px;
-$border-width-thick    : 5px;
-$border-width-heavy    : 8px;
-
+$border-width-thin   : 1px;
+$border-width-thick  : 5px;
+$border-width-heavy  : 8px;
 
 // ===== ANIMATION
-
-$transition-base       : 0.3s ease-in-out;
-$transition-fast       : 0.2s ease-in-out;
+$transition-base     : 0.3s ease-in-out;
+$transition-fast     : 0.2s ease-in-out;
