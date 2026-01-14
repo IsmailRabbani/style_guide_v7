@@ -1,33 +1,61 @@
 // ====== Grid System
-
 .container {
   padding: 0 $base-spacing;
+  @media (min-width: $breakpoint-tablet) {
+    max-width: $container-width;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include disp-flex($dir: column);
   padding: 1em $base-spacing;
+  @media (min-width: $breakpoint-tablet) {
+    @include disp-flex($dir: row);
+  }
 }
 
+// ==== Shared Styles & Mobile Defaults
+
 [class^=col] {
+  // Mobile First Styles
   flex-basis: 100%;
   min-height: calc($base-spacing * 2.5);
   margin-top: $base-spacing;
   padding: $base-spacing;
   border-radius: $border-radius;
-}
-
-// --- THE LOOP ---
-// This reads: "For every 'number' and 'color' inside '$grid-theme-colors'..."
-@each $num, $color in $grid-theme-colors {
-
-  // Generate .theme.col-1, .theme.col-2, etc.
-  .theme.col-#{$num} {
-    background-color: $color;
+    //===== DESKTOP STYLES
+    @media (min-width: $breakpoint-tablet) {
+      @include disp-flex($just: center, $algn-itms: center);
+      margin-top: 0;
+    //=== Adjacent Sibling Selector (Replacing [class^=col] + [class^=col])
+    //=== The '&' refers to the parent selector ([class^=col])
+    & + & {
+       margin-left: $base-spacing;
+    }
   }
 }
-
+  // THE SIZING LOOP (Calculates Widths)
+  // This generates .col-1 through .col-12 automatically
+  @for $i from 1 through 12 {
+      .col-#{$i} {
+      // Only apply widths on Desktop
+      @media (min-width: $breakpoint-tablet) {
+   // (100% divided by 12) multiplied by the column number
+        flex-basis: (100% / 12) * $i;
+    }
+  }
+}
+  // --- THE COLOR LOOP ---
+  // For every 'number' and 'color' inside '$grid-theme-colors'..."
+  @each $num, $color in $grid-theme-colors {
+    // Generate .theme.col-1, .theme.col-2, etc.
+    .theme.col-#{$num} {
+      background-color: $color;
+  }
+}
 .card {
   flex-basis: 100%;
 }

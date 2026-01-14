@@ -1,0 +1,21 @@
+header.row {
+  @include disp-flex($disp: null, $algn-itms: center);
+  @media (min-width: $breakpoint-tablet) {
+      // Force the Logo Column (col-3) to the LEFT
+      .col-3 {
+        @include disp-flex($disp: null, $just: flex-start);
+      // Force the Nav Column (col-9) to the RIGHT
+    }
+      .col-9 {
+        @include disp-flex($disp: null, $just: flex-end);
+      // Style the Navigation Menu
+      .nav {
+        @include disp-flex($disp: null, $dir: row, $just: flex-end, $algn-itms: center);
+        width: 100%;
+        &-link {
+          flex-basis: 100px;
+        }
+      }
+    }
+  }
+}

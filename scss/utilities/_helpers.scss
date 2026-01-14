@@ -1,6 +1,13 @@
-//==== A generic Placeholder for centering blocks
+// ==== The Logic (Placeholder)
 %img-centered {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+// This creates the .centered class to use in HTML
+.centered {
+  @extend %img-centered;
+  @media (min-width: $breakpoint-tablet) {
+    @extend %img-centered;
+  }
 }

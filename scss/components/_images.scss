@@ -18,5 +18,8 @@
   }
     &-logo {
       @extend %img-centered;
+      @media (min-width: $breakpoint-tablet) {
+      margin: 0; 
+    }
   }
 }
